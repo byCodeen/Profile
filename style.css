@@ -20,6 +20,15 @@
       padding: 20px;
     }
     
+    .scroll::-webkit-scrollbar {
+      width: 7px;
+    }
+
+    .scroll::-webkit-scrollbar-thumb {
+      background: #666;
+      border-radius: 20px;
+    }
+
     .card {
       max-width: 340px;
       margin: auto;
@@ -196,11 +205,11 @@
       display: -webkit-box;
       display: flex;
       -webkit-box-align: center;
-              align-items: center;
+      align-items: center;
       padding: 0 20px;
       margin-bottom: 30px;
     }
-    .card-social svg {
+    .card-social i {
       fill: #a5b5ce;
       width: 16px;
       display: block;
@@ -223,8 +232,9 @@
       background-color: rgba(93, 133, 193, 0.05);
       border-radius: 50%;
       margin-right: 10px;
+      text-decoration: none;
     }
-    .card-social a:hover svg {
+    .card-social a:hover i {
       fill: #637faa;
     }
     .card-social a:last-child {
